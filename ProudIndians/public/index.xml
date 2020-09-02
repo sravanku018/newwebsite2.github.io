@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Be a ProudIndian</title>
+    <link>https://sravanku018.github.io/</link>
+    <description>Recent content on Be a ProudIndian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Sep 2020 19:23:15 +0530</lastBuildDate>
+    
+	<atom:link href="https://sravanku018.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lal Bahadur Shastri</title>
+      <link>https://sravanku018.github.io/posts/warroir2/</link>
+      <pubDate>Wed, 02 Sep 2020 19:23:15 +0530</pubDate>
+      
+      <guid>https://sravanku018.github.io/posts/warroir2/</guid>
+      <description>Shri Lal Bahadur Shastri was born on October 2, 1904 at Mughalsarai, a small railway town seven miles from Varanasi in Uttar Pradesh. His father was a school teacher who died when Lal Bahadur Shastri was only a year and half old. His mother, still in her twenties, took her three children to her father’s house and settled down there.
+Lal Bahadur’s small town schooling was not remarkable in any way but he had a happy enough childhood despite the poverty that dogged him.</description>
+    </item>
+    
+    <item>
+      <title>Netaji Subhas Chandra Bose</title>
+      <link>https://sravanku018.github.io/posts/warrior1/</link>
+      <pubDate>Wed, 02 Sep 2020 14:05:51 +0530</pubDate>
+      
+      <guid>https://sravanku018.github.io/posts/warrior1/</guid>
+      <description>Netaji Subhas Chandra Bose (23 January 1897 – 18 August 1945) is one of the most celebrated freedom fighters of India. In 1942, he earned the honorific title ‘Netaji’ (meaning “Respected Leader” in Hindi), in Germany by the Indian soldiers of the Azad Hind Fauj or the Indian National Army and by the German and Indian officials in the Special Bureau for India in Berlin. Netaji’s death is one of the most discussed and mysterious deaths in India, which has led to theories and conspiracies regarding his possible survival after his disappearance in 1945.</description>
+    </item>
+    
+    <item>
+      <title>About Hugo</title>
+      <link>https://sravanku018.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sravanku018.github.io/about/</guid>
+      <description>It is sample web site</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://sravanku018.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sravanku018.github.io/contact/</guid>
+      <description>Follow me, @johndoe.</description>
+    </item>
+    
+    <item>
+      <title>First snippet</title>
+      <link>https://sravanku018.github.io/snippets/first/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sravanku018.github.io/snippets/first/</guid>
+      <description>This content is in snippets/first/index.md
+pwd </description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://sravanku018.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sravanku018.github.io/projects/</guid>
+      <description>Wait for it</description>
+    </item>
+    
+    <item>
+      <title>Second snippet</title>
+      <link>https://sravanku018.github.io/snippets/second/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sravanku018.github.io/snippets/second/</guid>
+      <description>This content is in snippets/second/index.md
+ls -la </description>
+    </item>
+    
+  </channel>
+</rss>

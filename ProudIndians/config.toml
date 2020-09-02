@@ -18,7 +18,7 @@ disqusShortname = "yourdiscussshortname"
     author = "Sravan Kumar"
     description = "John Doe's personal website"
     keywords = "blog,developer,personal"
-    info = "Full Stack DevOps and Magician"
+    info = "Android developer"
     avatarurl = "images/avatar.jpg"
     #gravatar = "john.doe@example.com"
     footercontent = "Enter a text here."
@@ -131,9 +131,5 @@ disqusShortname = "yourdiscussshortname"
             weight = 5
             url = "contact/"
 
-              [[languages.en.menu.main]]
-            name = "Posts"
-            weight = 5
-            url = "posts/"
-
+           
 
