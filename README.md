@@ -1,133 +1,81 @@
-# Capsule
+# Easy Setup (Hugo + Netlify + Forestry)
+Build your website with Persian hugo theme by following this easy steps (No Coding Required)
 
-A CSS-only Hugo theme using the [Bulma CSS
-framework](https://github.com/jgthms/bulma) and [Font-Awesome
-icons](https://github.com/FortAwesome/Font-Awesome).
+<a href="http://bit.ly/meghna-hugo-installation" target="_blank" title="meghna hugo installation" rel="nofollow"><img width="100%" src="https://user-images.githubusercontent.com/37659754/70844354-4028be00-1e6a-11ea-8d84-02e9a25e7db8.png"></a>
 
-![Capsule Corp.](https://raw.githubusercontent.com/sudorook/capsule/master/assets/capsule-corp.png)
+In this tutorial we will show you to make your website live without buying any hosting and touching a single line of code. We made this tutorial based on [meghna hugo](https://github.com/themefisher/meghna-hugo) but you can setup everithing like this.
 
-# Install
+### What you need !!
 
-From the base of your website, run: 
-
-```
-git submodule add https://github.com/sudorook/capsule themes/capsule
-```
-
-You can then either build Hugo on the command line and pass the `-t capsule`
-flag, or you can add `theme = "capsule"` to your config.toml file.
+1. Git acccount (Ex: Github, Gitlab etc ) . In our case we use github.
+2. [Netlify](https://bit.ly/netlify-account) account to host files and add custom domain .
+3. [Forestry](https://bit.ly/forestry-account) account to maintain whole project without code.
 
 
-**Note: Any additional documentation will be added to the [Capsule
-Demo](https://sudorook.gitlab.io/capsule-demo) site, not here.**
+### Step 1 : Fork or Clone repository
+
+First we will fork this [persian hugo](https://github.com/themefisher/persian-hugo) template.
+
+### Step 2 : Add your repository in Forestry
+
+Go to your [forestry](https://bit.ly/forestry-account)  account and click on `import your site now`. declare your config.toml file [`exampleSite`] and fill up basic settings . Mark everything is done then go to configuration to change the base url . You can put any url but this have to similar as netlify . So for now put a name which you are going to put in netlify as netlify subdomain.
+
+### Step 3 : Setup and host website with Netlify
+
+Here comes the last step . Go to your [netlify](https://bit.ly/netlify-account) account and click add new site . Choose your git repository to import your website in netlify .  And now you can see the forked `persian hugo` theme. select it and follow the steps. Then go to `site settings` for change the site name and put your subdoamin name here what you puted on forestry as base url. save it and go to `deploy` from top menu, Wait a while and click on `site preview` or just simply go to the subdomain you puted as base url. **BOOM! Your site is live.** Now you can go to forestry and add, remove or customize every setting and content.
+
+> If you face any issue regarding the installation feel free to onen [open a new issue](https://github.com/themefisher/persian-hugo/issues)
 
 
+## Table of Contents
 
-## Notes: 
-
-### 1. Syntax highlighting (via pygments)
-
-For code blocks, pick the highlighter style in config.toml by setting: 
-```
-pygmentsstyle = "<style>"
-```
-
-For dark highlighter themes, you should rebuild capsule CSS with
-`build/extra/syntax.sass`. Uncomment it from the capsule.sass file and run
-`gulp`.
-
-Without that file, the background color will default to Bulma's light
-background-color, and light colored elements meant to be displayed against dark
-backgrounds from dark themes will be hard to read.
+- [Demo](#demo)
+- [Installation](#installation)
+- [Reporting Issues](#reporting-issues)
+- [Technical Support or Questions](#technical-support-or-questions-(paid))
+- [Licensing](#licensing)
+- [More Hugo Themes](https://themefisher.com/hugo-themes/)
 
 
-### 2. Unused classes in Bulma
+## Demo
 
-Capsule is set to only compile the classes it needs. To enable more Bulma
-classes, uncomment the relevant sass files in `build/bulma/bulma.sass`.
+[Live Preview](http://demo.themefisher.com/persian-hugo/).
+**The images are only for demonstration purpose, Please don't use those images.**
 
 
-### 3. Enable automatic generation of nav menus
+## Installation
+At the top we have shown an easy hugo installation. but still if you think you want to go with the traditional way then use the following commands:
 
-In your config.toml files, set:
+**Note : You must use `hugo-extended` version to compile SCSS**
 
 ```
-SectionPagesMenu = "main"
+$ git clone git@github.com:themefisher/persian-hugo.git
+$ cd persian-hugo/exampleSite/
+$ hugo server --themesDir ../..
 ```
 
-With this set, capsule with automatically generate a navigation menu in the
-navbar based on all the sections (the directories inside the content/
-directory) present in your site.
+## Reporting Issues
 
+We use GitHub Issues as the official bug tracker for the **Persian Theme**. Please Search [existing issues](https://github.com/themefisher/persian-hugo/issues). It’s possible someone has already reported the same problem.
+If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/persian-hugo/issues/new)
 
-### 4. Add git metadata to your pages
+## Technical Support or Questions (Paid)
 
-If you host your site on a public git vc server, you can set capsule to build a
-"Last edited on ..." note to each page that uses git metadata to display the
-date of the last commit and add a link to its blob on your public repo. 
+If you have questions or need help integrating the product please [contact us](mailto:themefisher@gmail.com) instead of opening an issue.
 
-In your config.toml file, set:
-```
-enableGitInfo = true
+## Licensing
 
-[params]
-  repo = "https://github.com/<user>/<repo>
+- Copyright 2020 Designed by [Themefisher](https://themefisher.com/) & Developed by [Gethugothemes](https://gethugothemes.com/)
+- Licensed under MIT (https://github.com/themefisher/persian-hugo/blob/master/LICENSE)
 
-```
+## Premium Themes
 
-The `repo` variable should point to the url of your repo for your website. The
-above example uses GitHub, but GitLab and any other site that follows the
-format of `<siteurl>/<user>/<repo>/commit/<hash>` will work, too. 
-
-
-### 5. Add custom javascript or CSS to a page
-
-In the toml header, add: 
-```
-css = """
-<style>
- ...
-</style>
-"""
-
-js = """
-<script>
- ...
-</script>
-"""
-```
-
-Any CSS or JS specified here will add to the site \<head\> when Hugo renders
-the page.
-
-
-### 6. Enable table of contents
-
-To generate a table of contents for a specific page, add to the toml header:
-```
-toc = true
-```
-
-The table of contents will contain all the header items defined in the
-markdown. The nesting levels for each match the header weight (h1, h2, etc.).
-
-
-# Build
-
-To (re)build the CSS, you need to have npm and gulp installed. Clone the
-capsule repository and once in it run:
-
-```
-npm install
-```
-
-and then
-
-```
-gulp
-```
-
-You can enable/disable sass components in /build/sass/capsule.sass. To use
-customized versions of capsule, you can maintain a fork repo and set the theme
-submodule to your fork, or you can simply make a symlink in the themes/ folder
-of your site to your local repo.
+| [![Mega-Bundle-HUGO](https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png)](https://themefisher.com/products/hugo-mega-bundle/) | [![galaxy](https://gethugothemes.com/wp-content/uploads/edd/2020/04/galaxy.png)](https://gethugothemes.com/products/galaxy/) | [![logbook](https://gethugothemes.com/wp-content/uploads/edd/2020/03/logbook-hugo.jpg)](https://gethugothemes.com/products/logbook-hugo/) |
+|:---:|:---:|:---:|
+| **Hugo Mega Bundle**  | **Galaxy**  | **LogBook**  |
+| [![gojournal](https://gethugothemes.com/wp-content/uploads/edd/2020/04/GoJournal-hugo.png)](https://gethugothemes.com/products/gojournal-hugo/) | [![gofolium](https://gethugothemes.com/wp-content/uploads/2020/03/gofolium.png)](https://gethugothemes.com/products/gofolium-hugo/) | [![biztrox](https://gethugothemes.com/wp-content/uploads/2019/12/Biztrox.png)](https://gethugothemes.com/products/hugo-business-theme/) |
+| **GoJournal** | **GoFolium** | **Biztrox** |
+| [![northendlab](https://gethugothemes.com/wp-content/uploads/2019/11/Blogplate-Blog-Template.png)](https://gethugothemes.com/products/northendlab/) | [![Liva](https://gethugothemes.com/wp-content/uploads/edd/2019/11/liva.png)](https://gethugothemes.com/products/liva-hugo/) | [![Kross](https://gethugothemes.com/wp-content/uploads/edd/2019/07/kross-portfolio-template.jpg)](https://gethugothemes.com/products/kross-hugo-theme/) |
+| **Northendlab** | **Liva** | **Kross** |
+| [![revolve](https://gethugothemes.com/wp-content/uploads/edd/2019/11/revolve.jpg)](https://gethugothemes.com/products/revolve-hugo/) | [![Phantom](https://gethugothemes.com/wp-content/uploads/edd/2019/06/Phantom.jpg)](https://gethugothemes.com/products/phantom-hugo-theme/) | [![all](https://gethugothemes.com/wp-content/uploads/2019/12/get-more-hugo-themes.png)](https://gethugothemes.com/shop/) |
+| **Revolve** | **Phantom** | **More Hugo Themes** |

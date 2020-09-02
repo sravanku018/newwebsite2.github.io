@@ -1,28 +1,12 @@
-name = "capsule"
-license = "GPL-2.0"
-licenselink = "https://github.com/sudorook/capsule/blob/master/LICENSE"
-description = "A CSS-only theme for Hugo using Bulma and Font-Awesome"
-homepage = "https://github.com/sudorook/capsule"
-tags = [
-         "hugo",
-         "bulma",
-         "css only",
-         "font awesome",
-         "responsive"
-       ]
-features = [
-             "css only",
-             "no javascript",
-             "built-in pagination",
-             "display git metadata",
-             "automatic share links",
-             "Bulma classes as shortcodes",
-             "image/figure shortcodes",
-             "responsive layout",
-             "pygments syntax highlighting",
-             "sort posts by categories and tags"
-           ]
-min_version = 0.55
+name = "Persian Hugo"
+license = "MIT"
+licenselink = "https://github.com/themefisher/persian-hugo/blob/master/LICENSE"
+description = "Persian is a Box design Personal blog template Based on Bootstrap and powered By Hugo. It is very responsive and perfectly fits on any size screen device. Though it is Powered By Hugo so your Blog website will be blazing fast. It ha forestry and netlify support so you can set up your own website less than five minutes and you will get a very easy backend to manage your web site. This theme has 5 ready to use pages they are Elegant design home page, about page, contact page, category page, and privacy policy page. In spite of It is a static theme but we have added a very useful and functional search system in this theme develop by themefisher"
+homepage = "https://gethugothemes.com/products/persian-hugo/"
+tags = ['landing-page', 'fast', 'light', 'white', 'modern', 'themefisher', 'hugo-theme', 'hugo-templates', 'bootstrap', 'blog', 'responsive', 'clean', 'simple', 'creative', 'contact-form', 'custom-themes', 'mobile', 'minimalistic', 'pages', 'resume', 'portfolio', 'google analytics', 'customizable', 'flexbox', 'presentation', 'product', 'theme', 'typography']
+features = ['bootstrap','responsive']
+min_version = "0.70.0"
 
 [author]
-  name = "sudorook"
+  name = "Themefisher"
+  homepage = "https://themefisher.com/"

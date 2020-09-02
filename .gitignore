@@ -1,7 +1,10 @@
-$RECYCLE.BIN/
+Thumbs.db
 .DS_Store
-*.sw[p-z]
-*~
-
+.dist
+.tmp
+.sass-cache
+npm-debug.log
 node_modules
-bower_components
+builds
+package-lock.json
+public
