@@ -1,7 +1,7 @@
 +++ 
 
 date = 2020-09-02T14:05:51+05:30
-title = "Proud Indian"
+title = "Netaji Subhas Chandra Bose"
 description = "Welcome to be ProudIndian"
 slug = "" 
 tags = []
