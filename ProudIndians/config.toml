@@ -4,6 +4,7 @@ title = "Be a ProudIndian"
 theme= "hugo-coder"
  languagecode = "en"
 defaultcontentlanguage = "en"
+publishdir = "sravanku018.github.io"
 
 paginate = 20
 canonifyurls = true
@@ -12,7 +13,7 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "yourdiscussshortname"
+
 
 [params]
     author = "Sravan Kumar"
